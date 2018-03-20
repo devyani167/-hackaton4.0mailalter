@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication5.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 800px;
+            height: 52px;
+        }
+        .style2
+        {
+            height: 500px;
+            width: 117px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <table style="font-family: Arial, Helvetica, sans-serif; font-size: large;">
+            <tr>
+                <td colspan="2" style="background-color: #BDBDBD; text-align: center" 
+                    class="style1">
+                    <h1 style="font-size: xx-large; font-family: 'Arial Black'; color: #000000; text-decoration: underline overline;">
+                        <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/MOB.png" 
+                            style="width: 150px" />
+                        CAN TRACK YOU LIKE A<asp:Image ID="Image2" runat="server"  
+                            ImageUrl="~/download (3).jpg" style="height: 60px; margin-left: 16px;" /></h1>
+                    <p>
+                        &nbsp;</p>
+                    <h1>
+                        
+                    </h1>&nbsp;&nbsp;&nbsp
+                    </td>
+            </tr>
+            <tr>
+                <td style="background-color: #D8D8D8" class="style2">
+                    <asp:Menu ID="Menu1" runat="server">
+                    </asp:Menu>
+                    <asp:Menu ID="Menu2" runat="server" onmenuitemclick="Menu2_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem 
+                                NavigateUrl="https://at.norton.com/&lt;/" Text="NORTAN" Value="New Item" 
+                                ImageUrl="~/NORTAN1.jpg">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="QUICK HEAL" Value="New Item" ImageUrl="~/QHEAL.png" 
+                                NavigateUrl="http://www.quickheal.com"></asp:MenuItem>
+                            <asp:MenuItem ImageUrl="~/KASPERSKY1.jpg" 
+                                NavigateUrl="https://www.kaspersky.de/" Text="KASPERSKY" Value="New Item">
+                            </asp:MenuItem>
+                            <asp:MenuItem ImageUrl="~/COMODO1.jpg" NavigateUrl="https://www.comodo.com/" 
+                                Text="COMODO" Value="New Item"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                    <h3>
+                    </h3>
+                </td>
+                <td style="height: 500px; background-color: #E6E6E6; width: 650px">
+                    
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <h2>This section changes on a page by page basis</h2>
+                            <p style="font-size: xx-large">&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p style="font-family: Magneto">&nbsp;</p>
+                        </asp:ContentPlaceHolder>
+                       
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="background-color:#BDBDBD; text-align:center">
+                 <b style="font-size: medium; font-family: 'Berlin Sans FB';"> @powered by Team:PRO_PALS </b>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+                 
